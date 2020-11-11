@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  color: whitesmoke;
+  padding: .6rem .7rem;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0px 0px 0.5rem rgba(0,0,0,0.3);
+}
+
+.btn--indigo {
+  background: indigo;
+}
+
+.btn--deeppink {
+  background: deeppink;
+}
+
+.btn--darkgreen {
+  background: darkgreen;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  background: violet;
+}
+
+/* Ripple Styles */
+.rippled {
+  position: relative;
+  overflow: hidden;
+}
+
+span.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  background-color: rgba(255, 255, 255, 0.7);
+  animation: ripple 450ms linear;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
